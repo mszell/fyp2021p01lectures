@@ -57,6 +57,10 @@ In VSCode when opening the notebook, you can select the environemt in the top ri
 
 #### Installing requirements
 
+First update the pip package in the venv:
+
+`python -m pip install -U pip`
+
 `pip install -r requirements.txt`
 
 DONE! You can proceed to use the virtual environment in the console or in your notebook editor.
@@ -64,12 +68,12 @@ DONE! You can proceed to use the virtual environment in the console or in your n
 
 ## Contributors
 
-Constantin-Bogdan Cräciun<cocr@itu.dk>
+Constantin-Bogdan Cräciun \<cocr@itu.dk\>
 
-Daniel Hansen<darh@itu.dk>
+Daniel Hansen \<darh@itu.dk\>
 
-Joao Silva<joap@itu.dk>
+Joao Silva \<joap@itu.dk\>
 
-Thorvald Sørensen<thso@itu.dk>
+Thorvald Sørensen \<thso@itu.dk\>
 
-Frederik Raisa<frai@itu.dk>
+Frederik Raisa \<frai@itu.dk\>
