@@ -14,6 +14,18 @@ Course page: https://learnit.itu.dk/course/view.php?id=3019694
 
 Startup python3's vitrul environemt which is included in this repo.
 
+#### First and Foremost - Create the virtual environment and install the requirements
+
+*From console in the root of the folder:*
+
+`python -m venv venv`
+
+or
+
+`python3 -m venv venv`
+
+Proceed to activate the environment below and then install the requirements at the end.
+
 
 #### For Windows Terminal/Powershell
 
@@ -41,6 +53,13 @@ To deactivate the virtual environemt, type:
 #### AUTOMACIALLY for Anaconda or Visual Code Studio
 
 In VSCode when opening the notebook, you can select the environemt in the top right corner of the notebook. Here you choose the one that matches the path of the project and is named `venv`.
+
+
+#### Installing requirements
+
+`pip install -r requirements.txt`
+
+DONE! You can proceed to use the virtual environment in the console or in your notebook editor.
 
 
 ## Contributors
