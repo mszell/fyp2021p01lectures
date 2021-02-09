@@ -12,7 +12,7 @@ import collections
 
 def age_analysis():
     #Bradford Casualties2019 file
-    file = open("data/Bradford/Bradford - Casualties2019.csv", "r")
+    file = open("../../data/processed/Bradford - Casualties2019.csv", "r")
     file = file.read()
     #split file into a list of strings
     file_strings = file.split("\n")[:-1]
@@ -30,7 +30,7 @@ def age_analysis():
 
 def time_analysis():
     #Bradford Accidents2019 file
-    file = open("data/Bradford/Bradford - Accidents2019.csv", "r")
+    file = open("../../data/processed/Bradford - Accidents2019.csv", "r")
     file = file.read()
     #split file into a list of strings
     file_strings = file.split("\n")[:-1]
