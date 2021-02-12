@@ -6,7 +6,8 @@ import pandas as pd
 # Constants
 raw_folder = Path('./data/raw/')
 pross_folder = Path('./data/processed/')
-pross_out = "bradford_all_inner.csv"
+F_N_BRADFORD = "bradford_accidents.csv"
+F_N_BRADFORD_ALL_INNER = "bradford_all_inner.csv"
 
 accident = raw_folder / "Road Safety Data - Accidents 2019.csv"
 casual = raw_folder / "Road Safety Data - Casualties 2019.csv"
@@ -31,4 +32,5 @@ data_inner = pd.merge(data_inner, data_veh, how="inner", on=[
 
 
 # Save all the processed data
-data_inner.to_csv(pross_folder / pross_out)
+brad_acc.to_csv(pross_folder / F_N_BRADFORD)
+data_inner.to_csv(pross_folder / F_N_BRADFORD_ALL_INNER)
