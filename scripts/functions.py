@@ -15,6 +15,6 @@ def barplot(data, field_name, field_categories):
 	fig.autofmt_xdate(rotation=45)
 
 	axes.set_xticks(range(len(categories)))
-	axes.set_xticklabels(field_categories.values());
+	axes.set_xticklabels([field_categories[c] for c in categories]);
 
 print("Loaded functions.\n")
