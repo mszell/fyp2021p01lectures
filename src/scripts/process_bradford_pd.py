@@ -19,13 +19,13 @@ PATH['vehicles'] = PATH['raw'] / "Road Safety Data - Vehicles 2019.csv"
 DATA = {}
 
 DATA['accident'] = pd.read_csv(PATH['accident'], dtype={
-                               0: 'string', 31: 'string'}, encoding='utf-8-sig')
+                               0: 'string', 31: 'string'}, encoding='utf-8-sig', index_col=False)
 
 DATA['casual'] = pd.read_csv(PATH['casual'], dtype={
-                             0: 'string'}, encoding='utf-8-sig')
+                             0: 'string'}, encoding='utf-8-sig', index_col=False)
 
 DATA['vehicles'] = pd.read_csv(PATH['vehicles'], dtype={
-                               0: 'string'}, encoding='utf-8-sig')
+                               0: 'string'}, encoding='utf-8-sig', index_col=False)
 
 
 # === Process it
@@ -45,9 +45,10 @@ DATA['brad_vehicles'] = DATA['vehicles'][brad_vehi_mask]
 
 
 # === Save it
-DATA['brad_accident'].to_csv(PATH['interim'] / 'bradford_accidents.csv')
-DATA['brad_casual'].to_csv(PATH['interim'] / 'bradford_casualties.csv')
-DATA['brad_vehicles'].to_csv(PATH['interim'] / 'bradford_vehicles.csv')
+# Don't let pandas add an index
+DATA['brad_accident'].to_csv(PATH['interim'] / 'bradford_accidents.csv', index=False)
+DATA['brad_casual'].to_csv(PATH['interim'] / 'bradford_casualties.csv', index=False)
+DATA['brad_vehicles'].to_csv(PATH['interim'] / 'bradford_vehicles.csv', index=False)
 
 
 # === Old code
