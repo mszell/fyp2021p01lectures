@@ -57,6 +57,7 @@ In VSCode when opening the notebook, you can select the environemt in the top ri
 
 #### Installing requirements
 
+Before you do this, make sure to close down Visual Code Studio completely or any other apps using python.
 First update the pip package in the venv:
 
 `python -m pip install -U pip`
