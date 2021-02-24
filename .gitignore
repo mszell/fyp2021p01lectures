@@ -3,3 +3,5 @@
 venv
 .vscode/
 *~lock*
+variable lookup.xls
+
